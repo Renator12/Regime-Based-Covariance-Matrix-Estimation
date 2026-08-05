@@ -1,0 +1,82 @@
+Core methodology papers — read these properly:
+
+Engle (2002) — "Dynamic Conditional Correlation: A Simple Class of Multivariate GARCH Models" — Journal of Business & Economic Statistics. Your main winning estimator. Read fully.
+DeMiguel, Garlappi & Uppal (2009) — "Optimal Versus Naive Diversification: How Inefficient is the 1/N Portfolio Strategy?" — Review of Financial Studies. Your evaluation framework and your result echoes theirs. Read fully.
+Patton & Sheppard (2009) — "Evaluating Volatility and Correlation Forecasts" — Handbook of Financial Time Series. Your Frobenius norm and forecast evaluation methodology. Read sections 1-3.
+Bates & Granger (1969) — "The Combination of Forecasts" — Operational Research Quarterly. Short, read fully. Theoretical grounding for BMA.
+Diebold & Mariano (1995) — "Comparing Predictive Accuracy" — Journal of Business & Economic Statistics. The actual DM test paper you just used. Read sections 1-3.
+
+Covariance estimation — read key sections:
+
+Ledoit & Wolf (2004) — "A Well-Conditioned Estimator for Large-Dimensional Covariance Matrices" — Journal of Multivariate Analysis. Your LW estimator.
+Ledoit & Wolf (2022) — "The Power of (Non-)Linear Shrinking" — Journal of Financial Econometrics. Updated version, cite alongside 2004.
+Bollerslev (1986) — "Generalized Autoregressive Conditional Heteroskedasticity" — Journal of Econometrics. The original GARCH paper, cite for GARCH(1,1) within DCC.
+Markowitz (1952) — "Portfolio Selection" — Journal of Finance. Cite for MVO foundation, you know what it says.
+
+Regime detection — read key sections:
+
+Hamilton (1989) — "A New Approach to the Economic Analysis of Nonstationary Time Series and the Business Cycle" — Econometrica. Your HMM. Read sections 1-3.
+Ang & Bekaert (2004) — "How Regimes Affect Asset Allocation" — Financial Analysts Journal. Closest empirical precedent to your regime-conditional evaluation.
+
+Eigenvalue / random matrix theory — skim for the intuition:
+
+Laloux et al. (1999) — "Noise Dressing of Financial Correlation Matrices" — Physical Review Letters. Why most eigenvalues are noise, why top eigenvalues matter. Short paper, read fully.
+Ledoit & Wolf (2004) already covers this — their shrinkage motivation is explicitly about eigenvalue correction so you don't need a separate citation for most of the eigenvalue intuition.
+Fan, Fan & Lv (2008) — "High Dimensional Covariance Matrix Estimation in Approximate Factor Models" — Annals of Statistics. Shows portfolio optimization depends on systematic factor eigenvalues. Read introduction and section 2.
+
+Portfolio construction — cite, don't need to read deeply:
+
+Maillard, Roncalli & Teïletche (2010) — "The Properties of Equally Weighted Risk Contributions Portfolios" — Journal of Portfolio Management. Your risk parity objective function.
+Jagannathan & Ma (2003) — "Risk Reduction in Large Portfolios: Why Imposing the Wrong Constraints Helps" — Journal of Finance. Your long-only weight constraint justification.
+Sharpe (1966) — "Mutual Fund Performance" — Journal of Business. Original Sharpe ratio, cite for your evaluation metric.
+
+Bayesian model averaging — read introduction + key result:
+
+Raftery, Madigan & Hoeting (1997) — "Bayesian Model Averaging for Linear Regression Models" — Journal of the American Statistical Association. Formal BMA grounding.
+Timmermann (2006) — "Forecast Combinations" — Handbook of Economic Forecasting Ch. 4. Why combinations sometimes fail, directly relevant to your negative result on adaptive BMA.
+
+Factor models — skim:
+
+Harvey (1989) — "Forecasting, Structural Time Series Models and the Kalman Filter" — Cambridge University Press, Ch. 2-4. Your Kalman filter factor model.
+Stock & Watson (2002) — "Forecasting Using Principal Components from a Large Number of Predictors" — Journal of the American Statistical Association. PCA initialization for your factor model.
+
+Backtesting discipline:
+
+Lopez de Prado (2018) — "Advances in Financial Machine Learning" — Wiley. Ch. 2 (data), Ch. 7 (walk-forward), Ch. 12 (backtesting). Don't read cover to cover — just these three chapters.
+
+The disconnect finding — supporting literature:
+
+Patton (2011) — "Volatility Forecast Comparison Using Imperfect Volatility Proxies" — Journal of Econometrics. Formally treats the forecast accuracy vs realized performance disconnect.
+Kan & Zhou (2007) — "Optimal Portfolio Choice with Parameter Uncertainty" — Review of Financial Studies. Shows estimation error affects portfolio performance in ways forecast accuracy metrics don't capture.
+
+Priority reading order given you need to write the paper now:
+
+Week 1 — before writing methodology:
+
+Engle (2002) — fully
+DeMiguel et al. (2009) — fully
+Diebold & Mariano (1995) — sections 1-3
+Bates & Granger (1969) — fully
+Laloux et al. (1999) — fully
+
+Week 2 — while writing results:
+
+Patton & Sheppard (2009) — sections 1-3
+Ang & Bekaert (2004) — sections 1-2
+Timmermann (2006) — introduction and section on combination failure
+Fan, Fan & Lv (2008) — introduction and section 2
+
+Cite but don't need to read:
+
+Markowitz (1952)
+Bollerslev (1986)
+Hamilton (1989)
+Sharpe (1966)
+Jagannathan & Ma (2003)
+Ledoit & Wolf (2022)
+Stock & Watson (2002)
+Maillard et al. (2010)
+Harvey (1989)
+Raftery et al. (1997)
+Kan & Zhou (2007)
+Patton (2011)

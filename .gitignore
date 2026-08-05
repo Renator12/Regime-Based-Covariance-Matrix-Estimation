@@ -1,0 +1,28 @@
+# data files
+data/raw/
+data/processed/
+data/external/
+*.parquet
+*.csv
+*.h5
+
+# jupyter
+.ipynb_checkpoints/
+
+# python
+__pycache__/
+*.pyc
+.env
+.venv_mrp/
+.venv/
+venv/
+
+# credentials
+*credentials*
+*password*
+
+# OS
+.DS_Store
+
+# results (optional - remove this if you want results tracked)
+# results/
